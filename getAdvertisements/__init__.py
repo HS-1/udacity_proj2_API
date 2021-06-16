@@ -11,10 +11,12 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         database = client['hsneighborlycosmosdb']
         collection = database['advertisements']
 
+        print("connected to mongodb")
 
         result = collection.find({})
         result = dumps(result)
-
+        print("result")
+        print(result)
         return func.HttpResponse(result, mimetype="application/json", charset='utf-8')
     except:
         print("could not connect to mongodb")
