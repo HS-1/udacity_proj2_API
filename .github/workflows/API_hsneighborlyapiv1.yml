@@ -40,4 +40,4 @@ jobs:
         app-name: 'hsneighborlyapiv1'
         slot-name: 'production'
         package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_aa880ccffd9a4d11aa877628f2c20512 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_ecffc4548f8647eea2703c4e04fa87ad }}
