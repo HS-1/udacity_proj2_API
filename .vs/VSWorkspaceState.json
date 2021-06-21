@@ -1,6 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\createAdvertisement",
+    "\\deleteAdvertisement",
+    "\\eventHubTrigger",
+    "\\getAdvertisement",
+    "\\getAdvertisements",
+    "\\getPost",
+    "\\getPosts",
+    "\\updateAdvertisement"
   ],
+  "SelectedNode": "\\requirements.txt",
   "PreviewInSolutionExplorer": false
 }

@@ -1,7 +1,7 @@
 import json
 import logging
 import azure.functions as func
-
+import settings
 
 def main(event: func.EventGridEvent):
 

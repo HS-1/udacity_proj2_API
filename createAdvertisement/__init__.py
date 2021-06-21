@@ -1,5 +1,6 @@
 import azure.functions as func
 import pymongo
+import settings
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
 
@@ -7,9 +8,9 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     if request:
         try:
-            url = "AccountEndpoint=https://hsneighborlycosmosacc.documents.azure.com:443/;AccountKey=h56x0NaruDZCCp1JVYNGHteH9rJd9XXHTdEEZtWd0PSaI4IAeRVHFKNMjnScEzlWGNf7ARluxvPa7PUkutVfOA==;"  # TODO: Update with appropriate MongoDB connection information
+            url = settings.DB_URL
             client = pymongo.MongoClient(url)
-            database = client['azure']
+            database = client['hsneighborlycosmosdb']
             collection = database['advertisements']
 
             rec_id1 = collection.insert_one(eval(request))
