@@ -1,1 +1,1 @@
-DB_URL = "mongodb://hsneighborlycosmosacc:6GLHy5ovCvbThfOUM80TZlmxLwxdwX50uAa9RaFWgXBaljxaLIqPn1mFkq8uRO5162DCTUIszh0N7lzjzblzPw==@hsneighborlycosmosacc.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@hsneighborlycosmosacc@"
+DB_URL = "mongodb://hsneighborlycosmosacc:Kt165oLBkg3pRsPIi8VjesLLGzgzFmn5DI5wxnWinbn3Tt48Gx8tTOw5iTaoxateo4vnNVczeZXEBBq90GdvVQ==@hsneighborlycosmosacc.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@hsneighborlycosmosacc@"
