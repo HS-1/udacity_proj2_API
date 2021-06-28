@@ -14,7 +14,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             database = client['hsneighborlycosmosdb']
             collection = database['advertisements']
             
-            query = {'_id': str(id)}
+            query = {'_id': ObjectId(id)}
             result = collection.delete_one(query)
             return func.HttpResponse("")
 
