@@ -10,7 +10,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     if id:
         try:
             url = settings.DB_URL
-            client = pymongo.MongoClient[url]
+            client = pymongo.MongoClient(url)
             database = client['hsneighborlycosmosdb']
             collection = database['advertisements']
             
