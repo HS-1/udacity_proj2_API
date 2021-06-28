@@ -15,8 +15,8 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             database = client['hsneighborlycosmosdb']
             collection = database['advertisements']
             
-            filter_query = {'_id': str(id)}
-            update_query = {"$set": request}
+            filter_query = {'_id': ObjectId(id)}
+            update_query = {"$set": eval(request)}
             rec_id1 = collection.update_one(filter_query, update_query)
             return func.HttpResponse(status_code=200)
         except:
